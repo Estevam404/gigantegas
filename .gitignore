@@ -1,0 +1,13 @@
+# Arquivos do Windows
+desktop.ini
+Thumbs.db
+
+# Arquivos de sistema
+.DS_Store
+
+# Node (caso use futuramente)
+node_modules/
+
+# Backups de editores
+*.log
+*.tmp
