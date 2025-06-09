@@ -1,20 +1,10 @@
-.carousel-item img {
-  height: 100vh;
-  object-fit: cover;
-  width: 100%;
-}
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+.footer-links a {
+  transition: color 0.3s;
 }
 
-header {
-  margin-top: 0;
-  padding-top: 0;
+.footer-links a:hover {
+  color: #fd8b07 !important; /* laranja da identidade visual */
+  text-decoration: underline !important;
 }
 
-.carousel {
-  margin-top: 0;
-  padding-top: 0;
-}
