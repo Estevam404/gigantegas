@@ -4,7 +4,38 @@
 }
 
 .footer-links a:hover {
-  color: #fd8b07 !important; /* laranja da identidade visual */
+  color: #fd8b07 !important; 
   text-decoration: underline !important;
+}
+.footer-links a:hover {
+  color: #fd8b07 !important; 
+  text-shadow: 0 0 5px rgba(251, 0, 0, 0.7);
+}
+.social-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+.social-icon:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px #ffffff22);
+}
+
+
+.social-icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0);
+}
+.sobre-nos p{
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem
 }
 
