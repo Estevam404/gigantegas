@@ -37,9 +37,108 @@
       </div>
         </nav>
     </header>
-    <main>
+<main class="mt-5 container-fluid py-5 bg-light">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold text-primary">
+      🛒 Confira nossos <span class="text-dark">produtos disponíveis</span> <span class="text-warning">24h</span>
+    </h2>
+    <p class="text-muted">Escolha seu produto e receba em casa com segurança e praticidade.</p>
+  </div>
 
-    </main>
+  <div class="row">
+    <!-- Filtro lateral -->
+    <div class="col-lg-3 mb-4">
+      <div class="bg-white rounded shadow-sm p-4">
+        <h5 class="fw-bold mb-3 text-primary">🔎 Filtrar por categoria</h5>
+        <form id="filtro-produtos">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="filtroGas" checked>
+            <label class="form-check-label" for="filtroGas">Botijões de Gás</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="filtroAgua" checked>
+            <label class="form-check-label" for="filtroAgua">Água mineral (20L)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="filtroMangueira" checked>
+            <label class="form-check-label" for="filtroMangueira">Mangueiras</label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="filtroRegulador" checked>
+            <label class="form-check-label" for="filtroRegulador">Reguladores</label>
+          </div>
+          <button type="button" class="btn btn-outline-primary w-100">Aplicar Filtro</button>
+        </form>
+
+        <hr class="my-4">
+
+        <h6 class="fw-bold mb-2 text-secondary">Ordenar por:</h6>
+        <select class="form-select">
+          <option selected>Mais recentes</option>
+          <option value="1">Menor preço</option>
+          <option value="2">Maior preço</option>
+          <option value="3">Nome (A-Z)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Grid de produtos -->
+    <div class="col-lg-9">
+      <div class="row g-4">
+        <!-- Produto 1 -->
+        <div class="col-md-6 col-xl-4 produto filtroGas">
+          <div class="card h-100 shadow-sm border-0 card-hover transition">
+            <img src="/img/Produto-1 (2).png" class="card-img-top" alt="Botijão P13 Azul">
+            <div class="card-body text-center">
+              <h5 class="card-title">Botijão P13 Azul</h5>
+              <p class="card-text small text-muted">Gás de cozinha • 13kg</p>
+              <button class="btn btn-primary w-100">Pedir agora</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="col-md-6 col-xl-4 produto filtroAgua">
+          <div class="card h-100 shadow-sm border-0 card-hover transition">
+            <img src="/img/Produto3.png" class="card-img-top" alt="Galão 20L">
+            <div class="card-body text-center">
+              <h5 class="card-title">Galão de Água 20L</h5>
+              <p class="card-text small text-muted">Água mineral natural</p>
+              <button class="btn btn-primary w-100">Pedir agora</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="col-md-6 col-xl-4 produto filtroMangueira">
+          <div class="card h-100 shadow-sm border-0 card-hover transition">
+            <img src="/img/produto4.png" class="card-img-top" alt="Mangueira de gás">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mangueira de Gás</h5>
+              <p class="card-text small text-muted">Uso residencial</p>
+              <button class="btn btn-primary w-100">Pedir agora</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="col-md-6 col-xl-4 produto filtroRegulador">
+          <div class="card h-100 shadow-sm border-0 card-hover transition">
+            <img src="/img/produto6.png" class="card-img-top" alt="Registro de gás">
+            <div class="card-body text-center">
+              <h5 class="card-title">Registro para Botijão</h5>
+              <p class="card-text small text-muted">Regulador com selo Inmetro</p>
+              <button class="btn btn-primary w-100">Pedir agora</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ... outros produtos aqui ... -->
+      </div>
+    </div>
+  </div>
+</main>
+</main>
     <footer style="background-color: #00355f;" class="text-light py-5 mt-5">
       <div class="container">
         <div class="row">
@@ -99,14 +198,13 @@
                 Avaliar no Google
               </a>
             </div>
-          </div>
-    
-    
+          </div>    
         </div>
         <div class="text-center pt-4 border-top border-light mt-4">
           <small>© 2025 GiganteGás. Todos os direitos reservados. Desenvolvido por Estevam.</small>
         </div>
       </div>
     </footer>
+    <script src="/main.js"></script>
 </body>
 </html>
